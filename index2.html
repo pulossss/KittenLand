@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compra</title>
+    <script async src="compra.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="row">
+            <div class="col-md-8 cart">
+                <div class="title">
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>carrinho</b></h4>
+                        </div>
+                        <div class="col align-self-center text-right text-muted">3 items</div>
+                    </div>
+                </div>
+                <div class="row border-top border-bottom" >
+                    <div class="row main align-items-center product">
+                        <div class="col-2"><img class="img-fluid" src="/imagens/gatinhoinhu.jpg"></div>
+                        <div class="col">
+                            <div class="row text-muted">Gatinhoinhu</div>
+                            <div class="row">gatinho 1</div>
+                        </div>
+                        <div class="col">
+                            <span class="botaoDiminuir">-</span>
+                            <span class="border qtdProduct">1</span>
+                            <span class="botaoAumentar">+</a>
+                        </div>
+                        <div class="col product-Price">R$ 100,00 <span class="close">&#10005;</span></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row main align-items-center product">
+                        <div class="col-2"><img class="img-fluid" src="/imagens/gato chad.jpg"></div>
+                        <div class="col">
+                            <div class="row text-muted">Gato Chad</div>
+                            <div class="row">gato 2</div>
+                        </div>
+                        <div class="col">
+                            <span class="botaoDiminuir">-</span>
+                            <span class="border qtdProduct">1</span>
+                            <span class="botaoAumentar">+</span>
+                        </div>
+                        <div class="col product-Price" >R$44,00 <span class="close">&#10005;</span></div>
+                    </div>
+                </div>
+                <div class="row border-top border-bottom">
+                    <div class="row main align-items-center product">
+                        <div class="col-2"><img class="img-fluid" src="/imagens/gato dentinho.jpg"></div>
+                        <div class="col">
+                            <div class="row text-muted">Gato Risonho</div>
+                            <div class="row">gato 3</div>
+                        </div>
+                        <div class="col">
+                            <span class="botaoDiminuir">-</span>
+                            <span class="border qtdProduct">1</span>
+                            <span class="botaoAumentar">+</span>
+                        </div>
+                        <div class="col product-Price">R$44,00 <span class="close">&#10005;</span></div>
+                    </div>
+                </div>
+                <div class="back-to-shop"><a href="#">&leftarrow;</a><span class="text-muted">Voltar à Loja</span></div>
+            </div>
+            <div class="col-md-4 summary">
+                <div>
+                    <h5><b>Resumo</b></h5>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col" style="padding-left:0;">x itens totais</div>
+                    <div class="col text-right total">olá</div>
+                </div>
+                <form>
+                    <p>Entrega</p>
+                    <select id="envio">
+                        <option class="text-muted">Correios - R$ 15,00</option>
+                        <option class="text-muted">Loggi - R$ 20,00</option>
+                        <option class="text-muted">JadLog - R$ 25,00</option>
+                        <option class="text-muted">Correios Express - R$ 30,00</option>
+                        <option class="text-muted">FedEx - R$50,00</option>
+
+                    </select>
+
+                    <p>CÓDIGO DE DESCONTO</p>
+                    <input id="code" placeholder="Coloque o Código">
+                </form>
+                <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                    <div class="col">Preço Total</div>
+                    <div class="col text-right total">d</div>
+                </div>
+                <button class="btn">Comprar</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

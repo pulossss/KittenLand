@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KittenLand</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container-fluid">
+                <nav class="navbar bg-body-tertiary fixed-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">Kitten Land</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Carrinho</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container-fluid p-2">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/imagens/carrosel/Sem Título-1.jpg" class="d-block w-100" alt="gatinhoinhu">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Gatinhoinhu</h5>
+                        <p>Um belo gato, gosta de crianças e ele é bem educado.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagens/carrosel/Sem Título-2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Quieres?</h5>
+                        <p>Gato te passas o job Quieres?.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagens/carrosel/Sem Título-3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ultimo Gato Romântico</h5>
+                        <p>DJ solta pros apaixados.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <hr>
+    <section class="container-fluid">
+        <h3>Conheça Nossos Gatos</h3>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens/gatinhoinhu.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gatinhoinhu</h5>
+                        <p class="card-text">Um belo gato que sabe de algo ou viu algo mas continua com seu sorrisinho.
+                        </p>
+                    </div>
+                    <div class="card-footer btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <small>Adicionar ao Carrinho</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/imagens/gato chad.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gato Chad</h5>
+                        <p class="card-text">Esse gato red pill faz meawing, ele toma banho gelado todas as manhãs e não
+                            perde 1 ep do RedCast(não acione uma redflag perto dele)</p>
+                    </div>
+                    <div class="card-footer btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <small>Adicionar ao Carrinho</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens/gato trist.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sad Cat</h5>
+                        <p class="card-text">Esse gato amante do XXX, Lil peep e lofi não se cansa de estar triste,
+                            inimigo dos psicológos e de acordo com o Gato Chad ele é um beta. </p>
+                    </div>
+                    <div class="card-footer btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <small>Adicionar ao Carrinho</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens/gatler.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Adolf Cattler</h5>
+                        <p class="card-text">Esse gato acreditava que sua raça era pura e superior as outras porém após
+                            ver o Gato Chad desistiu dessa idea porém aderiu o visual</p>
+                    </div>
+                    <div class="card-footer btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <small>Adicionar ao Carrinho</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens/gato sovietico.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gato Soviético</h5>
+                        <p class="card-text">Esse gato após ouvir as ideias do antigo Adolf Cattler se revoltou e tentou
+                            criar um partido socialista com base nos trabalhadores porém encontrou o Gato Chad que o fez
+                            mudar de ideia. (ele está com frio)</p>
+                    </div>
+                    <div class="card-footer btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <small>Adicionar ao Carrinho</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens/gato dentinho.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gato Risonho</h5>
+                        <p class="card-text">Esse gato acha que é o coringa do filme Batman: O Cavaleiro das Trevas
+                            (2008) com Christian Bale protagonisando o Batman que é o mesmo que faz Psicopata Americano
+                            de (2000) conhecidencia?</p>
+                    </div>
+                    <div class="card-footer btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <small>Adicionar ao Carrinho</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens/gato tunado.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gatunado</h5>
+                        <p class="card-text">Sendo alertado até pelo Gato Chad para diminuir sua frequência nas
+                            academias, Gatunado pode ser considerado um <s>rato</s> gato de academia(foto atual 1 mês de
+                            academia)</p>
+                    </div>
+                    <div class="card-footer btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <small>Adicionar ao Carrinho</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens/cat.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gato</h5>
+                        <p class="card-text text-center">??? </p>
+                    </div>
+                    <div class="card-footer btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <small>Adicionar ao Carrinho</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <section class="container p-2">
+        <form method="get" action="">
+            <fieldset>
+                <legend class="text-center">Receba nossas Promoções</legend>
+                <div class="mb-3">
+                    <label class="form-label" for="nome" id="nome">Nome</label>
+                    <input type="text" name="nome" class="form-control" placeholder="Nome Completo">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="email" id="email">Email</label>
+                    <input type="email" name="email" class="form-control" placeholder="exemplo@xyz.com" required
+                        id="email">
+                </div>
+                <div class="text-center">
+                    <button class=" btn btn-secondary">Receber Promoções</button>
+                </div>
+
+            </fieldset>
+        </form>
+        <hr>
+    </section>
+
+    <section class="container-fluid ">
+        <h3 class="text-center">Preços dos nossos Gatos</h3>
+        <table class="table table-striped table-hover table-bordered border-white">
+            <thead class="table-dark">
+                <tr>
+                    <th class="">
+                        Gato
+                    </th>
+                    <th>
+                        Preço
+                    </th>
+                </tr>
+            </thead>
+            <tbody class=>
+                <tr>
+                    <td>
+                        Gatinhuinhu
+                    </td>
+                    <td>
+                        1000,00
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gato Chad
+                    </td>
+                    <td>
+                        10.000,00
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gato Sorrinho
+                    </td>
+                    <td>
+                        999,90
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gato Sad
+                    </td>
+                    <td>
+                        1.500,00
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gato Tunado
+                    </td>
+                    <td>
+                        3.900,00
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <br>
+    <footer>
+        <p>Desenvolvido por Paulo 2024 ©️</p>
+    </footer>
+</body>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title fs-5" id="exampleModalLabel">Finalizar Compra?</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Produto adicionado ao Carrinho!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-muted" data-bs-dismiss="modal">Adicionar mais itens</button>
+                <a href="checkout.html" type="button" class="btn btn-primary">Finalizar Compra</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+</html>
